@@ -1,0 +1,156 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* ------- header ------- */
+#header-pic {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#search {
+    float: right;
+    padding: 13px 15px 0px 0px;
+}
+
+.top-nav {
+    background-color: #dcb391;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+.top-nav a {
+    float: left;
+    color: rgb(73, 27, 6);
+    padding: 13px;
+    font-size: 19px;
+    text-decoration: none;
+    display: flex;
+}
+.fa-lg {
+   
+    padding: 13px;
+}
+.top-nav a:hover {
+    color: white ;
+    font-weight: 1000;
+    background-color: #bf9a79;
+    
+}
+
+/* ------- blogg ------- */
+.content {
+    margin-top: 10px;
+    display: grid;
+   
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    background: #dcb3912f;
+    padding: 30px;
+}
+
+.post a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(73, 27, 6);
+}
+.post a:hover {
+    background-color: #dcb391ac;
+}
+.post img {
+    width: 100%;
+    margin-right: 15px;
+}
+#h1 {
+    font-size: 28px;
+}
+
+.post {
+    display: grid;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: 500px;
+    width: 350px;
+    background: #dcb39183;
+    padding: 15px;
+    line-height: 140%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.date {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+/* ------- Ipad ------- */
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 900px;
+        
+    }
+    .top-nav a {
+        font-size: 17px;
+        padding-top: 17px;
+    }
+    .fa-lg {
+        margin-right: 3px;
+        padding: 10px;
+    }  
+    .post {
+        width: 410px;
+        flex-direction: column;
+    }
+    
+    .content {
+        grid-template-columns: auto auto;
+        gap: 20px;
+
+    }
+}
+/* ------- Mobil ------- */
+@media screen and (max-width: 900px){
+    .wrapper {
+        width:fit-content;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+   .post {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    height: fit-content;
+   }
+   .post img {
+    width: 300px;
+   }
+   .post a {
+    display: flex;
+   }
+   .top-nav a {
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+   }
+   #search {
+    margin-bottom: 10px;
+   }
+   .nav-text-mobile {
+    display: none;
+   }
+}
+
