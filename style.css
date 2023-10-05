@@ -112,7 +112,7 @@ body {
 /* ------- Ipad ------- */
 @media screen and (max-width: 1200px) {
     .wrapper {
-        width: 900px;
+        width: fit-content;
     }
     .top-nav a {
         font-size: 17px;
@@ -132,7 +132,7 @@ body {
         gap: 20px;
     }
     .top-nav input[type=text] {
-        width: 140px;
+        width: 95px;
       }
 }
 /* ------- Mobil ------- */
@@ -146,7 +146,7 @@ body {
         flex-direction: column;
     }
    .post {
-    width: 100%;
+    width: auto;
     height: fit-content;
    }
    .post img {
